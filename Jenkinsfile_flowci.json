@@ -4,7 +4,7 @@
       "repository": "dockerized-github-release-notes",
       "git_url":"github.com/chenfli",
       "jenkinsCredsId": "dockerhub",
-      "githubCredsId": "github",
+      "githubCredsId": "chenfli_github",
       "stages" : [
         "BuildDocker",
         "GitTagging"
