@@ -7,7 +7,7 @@ RUN pwd && apk update && \
     npm install && \
     npm install -g gulp && \
     gulp build && \
-    alias gren="$(pwd)/bin/gren/node gren-changelog.js" && \
+    ls -ltR && \
     mkdir -p /git/repo
 WORKDIR /git/repo
 
