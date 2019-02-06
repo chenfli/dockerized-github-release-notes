@@ -1,6 +1,8 @@
 FROM node:8-alpine
 ENV GREN_VERSION 0.17
-RUN git clone https://github.com/chenfli/github-release-notes && \
+RUN apt-get update && \
+    apt-get install -y git && \
+    git clone https://github.com/chenfli/github-release-notes && \
     cd github-release-notes && \
     npm install && \
     npm install -g gulp && \
