@@ -1,7 +1,7 @@
 FROM node:8-alpine
 ENV GREN_VERSION 0.17
-RUN apt-get update && \
-    apt-get install -y git && \
+RUN apk update && \
+    apk add git && \
     git clone https://github.com/chenfli/github-release-notes && \
     cd github-release-notes && \
     npm install && \
